@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "node-fetch": "^3.2.0"
+  },
+  "name": "valentine-script-extractor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "jsons": "node scripts/generateJSONS",
+    "text": "node scripts/generateText"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": "extract valentine script from api atlas academy"
+}
