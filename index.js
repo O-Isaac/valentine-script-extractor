@@ -73,14 +73,14 @@ async function generateTEXT() {
   const valentineScripts = await ValentineScripts();
 
   for (const script of valentineScripts) {
-    script.scripts.forEach(async ({ url }, index) => {
+    script.scripts.forEach(async ({ url, id }, index) => {
       const dirServant = join(dirJSONS, String(script.collectionNo));
       const req = await fetch(url);
       const textContent = await req.text();
 
       if (!existsSync(dirServant)) mkdirSync(dirServant);
 
-      writeFileSync(join(dirServant, String(index) + ".txt"), textContent);
+      writeFileSync(join(dirServant, String(id) + ".txt"), textContent);
     });
   }
 }
