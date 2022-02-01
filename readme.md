@@ -16,7 +16,7 @@ npm run jsons
 To get texts format
 
 ```bash
-npm run bash
+npm run text
 ```
 
 # Formats
